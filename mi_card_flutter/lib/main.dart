@@ -29,38 +29,62 @@ class ChallengeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      backgroundColor: Colors.teal,
-      body: SafeArea(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            Container(
-              width: 100.0,
-              color: Colors.red,
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  width: 100.0,
-                  height: 100.0,
-                  color: Colors.yellow,
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              CircleAvatar(
+                radius: 60.0,
+                backgroundImage: NetworkImage(
+                    'https://ceulaw.org.br/wp-content/uploads/2017/08/user-placeholder.jpg'),
+              ),
+              Text(
+                'Fernando Batista',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  color: Colors.white,
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
                 ),
-                Container(
-                  width: 100.0,
-                  height: 100.0,
-                  color: Colors.green,
+              ),
+              SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.teal.shade100,
+                  )),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+55 17 99669-3871',
+                    style: TextStyle(fontSize: 15.0, color: Colors.teal),
+                  ),
                 ),
-              ],
-            ),
-            Container(
-              width: 100.0,
-              color: Colors.blue,
-            )
-          ],
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'fernandohsbatista@gmail.com',
+                    style: TextStyle(fontSize: 15.0, color: Colors.teal),
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       ),
-    ));
+    );
   }
 }

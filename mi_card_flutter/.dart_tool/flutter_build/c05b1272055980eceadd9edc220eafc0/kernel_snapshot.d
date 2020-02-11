@@ -1,0 +1,1 @@
+/Users/mobile2you/Documents/flutter-course-projects/mi_card_flutter/.dart_tool/flutter_build/c05b1272055980eceadd9edc220eafc0/app.dill: /Users/mobile2you/Documents/flutter-course-projects/mi_card_flutter/lib/main.dart /Users/fernandobatista/flutter/packages/flutter/lib/cupertino.dart /Users/fernandobatista/flutter/packages/flutter/lib/material.dart

@@ -49,7 +49,7 @@ class _BallState extends State<Ball> {
   void showSnackBar() {
     Scaffold.of(context).hideCurrentSnackBar();
     final snackBar = SnackBar(
-      content: Text("Ball $ballNumber has been clicked"),
+      content: Text("Ball $ballNumber it's being shown now"),
       action: SnackBarAction(
         label: 'OK',
         onPressed: hideVisibleSnackBar,
